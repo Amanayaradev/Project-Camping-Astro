@@ -1,0 +1,19 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Footer from '../components/Footer.astro';
+import Header from '../components/Header.astro';
+import Step1 from '../components/Step1.jsx';
+import Step2 from '../components/Step2.jsx';
+import '../css.css'
+---
+
+<Layout title="Welcome to Astro.">
+	<main>
+        <Header/>
+        <div class="row justify-content-center ">
+            <Step1 client:only='react' />
+            <Step2 client:only='react'/>
+        </div>
+        <Footer/>
+	</main>
+</Layout>
