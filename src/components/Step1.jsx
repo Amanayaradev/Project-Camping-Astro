@@ -11,6 +11,7 @@ export default function Step1() {
       price: 18.0,
       priceTotal: 36.0,
       shippingPrice: 0.0,
+      priceRetail: 20.0,
       shippingMethod: 2,
     },
     {
@@ -21,6 +22,7 @@ export default function Step1() {
       price: 16.0,
       priceTotal: 64.0,
       shippingPrice: 0.0,
+      priceRetail: 20.0,
       shippingMethod: 2,
     },
     {
@@ -31,6 +33,7 @@ export default function Step1() {
       price: 17.0,
       priceTotal: 51.0,
       shippingPrice: 0.0,
+      priceRetail: 20.0,
       shippingMethod: 2,
     },
     {
@@ -41,6 +44,7 @@ export default function Step1() {
       price: 19.0,
       priceTotal: 19.0,
       shippingPrice: 7.99,
+      priceRetail: 20.0,
       shippingMethod: 1,
     },
   ]);
@@ -93,7 +97,7 @@ export default function Step1() {
                           <s>
                             Orig
                             <span className="price-each-retail">
-                              ${prod.shippingMethod.toFixed(2)}
+                              ${prod.priceRetail.toFixed(2)}
                             </span>
                           </s>
                         </div>
